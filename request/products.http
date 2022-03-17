@@ -1,0 +1,35 @@
+@api = http://localhost:8080/products
+
+GET {{api}}
+###
+POST {{api}}
+Content-Type:  application/json
+
+{
+    "name": "monitor samsung",
+    "description": "gaming monitor",
+    "quantity" : "7"
+}
+
+###
+
+GET {{api}}/3
+
+###
+
+DELETE {{api}}/11
+
+###
+
+GET {{api}}/count
+
+###
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "name" : "Laptop hp",
+    "description" : "office laptop",
+    "quantity" : 12  
+}
+
